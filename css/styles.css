@@ -1,5 +1,6 @@
 body {
     font-family: "Lato", sans-serif;
+    margin: 0;
   }
   
   .sidenav {
@@ -34,6 +35,18 @@ body {
     font-size: 40px;
     margin-left: 40px;
   }
+  div#brand-name{
+    font-family: 'Qwigley', cursive;
+    font-size: 6vw;
+    display: inline;
+    max-height: 2%;
+    float:left;
+  }
+  .navbar .container{
+    margin: 0;
+    height: 45px; /*set height of navbar*/
+    float:left;
+  }
   
   @media screen and (max-height: 800px) {
     .sidenav {padding-top: 15px;}
@@ -54,6 +67,7 @@ body {
     transform: translate(-50%, -50%);
     font-size: 100px;
   }
+/* NEW RESTAURANTS*/
   #new {
       text-align: left;
       border: 1px black;
@@ -97,9 +111,79 @@ body {
       margin-bottom: 20px;
     }
   }
-  #cuisines {
-      text-align: left;
-      border:1px black;
-      padding:6px;
-      margin:20px;
+/* NEW RESTAURANTS */
+
+/* CUISINES*/
+  .header {
+    text-align: center;
+    padding: 32px;
   }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+/* CUISINES */
+
+/* CONTACT US */
+  #contactus{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    color:black;
+    background-image: url("../images/lorna/miss-zhang-jz0xIgcwyL0-unsplash.jpg");
+    background-size: cover;
+  }
+  #contactus img{
+    object-fit: cover;
+    height: auto;
+  }
+  #contactus .btn{
+    background: transparent !important;
+    color:black;
+    font-weight: bolder;
+    padding: 3%;
+    font-size: 20px;
+  }
+  h3{
+    padding-top: 3%;
+    font-size: 50px;
+    padding-bottom: 1%;
+  }
+  #message{
+    color: black;
+    background: transparent;
+  }
+  .contactcontent{
+    padding: 4%;
+  }
+  /*CONTACT US*/
