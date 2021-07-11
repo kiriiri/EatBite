@@ -17,15 +17,23 @@
         <script src="js/scripts.js"></script>
     </head>
     <body>
-        <div id="mySidenav" class="sidenav"> 
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="#">New restaurants</a>
-            <a href="#">In Nairobi</a>
-            <a href="#">Outside Nairobi</a>
-            <a href="#">Search by cuisine</a>
+        <div class="container-fluid">
+            <div id="header">
+                <nav class="navbar navbar-expand-lg navbar-dark">
+                    <p>EatBite</p>
+                    <ul class="nav-items">
+                        <li><a href="#aboutus">New Restaurant</a></li>
+                        <li><a href="#menu">In Nairobi</a></li>
+                        <li><a href="#orders">Outside Nairobi</a></li>
+                        <li><a href="#contactus">Search by cuisine</a></li>
+                    </ul>
+                </nav>
+                <div class="content">
+                    <h1>Kenya's hottest restaurants</h1>
+                </div>
+            </div>
         </div>
-        <span style="font-size:50px;cursor:pointer" onclick="openNav()">&#9776; EatBite</span>
-        <div class="container-fluid" id="main"></div>
+        <br>
         <div class="container-fluid">
             <div class="card" id="new">
                 <div class="card-body">
@@ -49,14 +57,15 @@
                         </div>
                         <div class="col-md-3">
                             <div class="card">Tin Roof Cafe
-                                <img src="images/tinroof1.jpg" style="width:255px; height:380px;">
+                                <img src="images/tinroof1.jpg" style="width:255px; height:382px;">
                             </div>
                         </div>
                     </div>  
                 </div>
             </div>
         </div>
-        <div class="container-fluid" id="header">
+        <br>
+        <div class="container-fluid" id="cuisine">
             <h4>Popular Cuisines</h4>
             <p>The cuisines featured include:</p>
             <div id="menu">

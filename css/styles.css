@@ -1,87 +1,94 @@
-.sidenav {
-    display: none;
-    height: 100%;
-    width: 250px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color:white;
-    overflow-x: hidden;
-    padding-top: 60px;
-  }
-  .sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color:black;
-    display: block;
-  }
-  .sidenav a:hover {
-    color: black;
-  }
-  .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 40px;
-    margin-left: 40px;
-  }
-  @media screen and (max-height: 800px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 15px;}
-  }
-  .container-fluid{
-    padding: 0;
-  }
-  #main {
-    width:100%;
-    height:600px;
-    background-image:url('../images/image1.jpg');
-    background-position: center center;
-    background-size:cover;
-    background-repeat: no-repeat;
-    text-align: center;
-    color:black;
+.container-fluid{
+  padding: 0;
+}
+#header{
+  background-image: url("../images/image1.jpg");
+ /* Image is centered vertically and horizontally at all times */
+  background-position: center center;
+ /* Image doesn't repeat */
+  background-repeat: no-repeat;
+ /* Makes the image fixed in the viewport so that it doesn't move when the content height is greater than the image height */
+  background-attachment: fixed;
+ /* This is what makes the background image rescale based on its container's size */
+  background-size: cover;
+  text-align: center;
+  color: white;
+}
+#header p{
+  font-family: 'Zhi Mang Xing', cursive;
+  margin: 0;
+  font-size: 30px;
+  color:white;
+}
+.nav-items {
+  float: right;
+  margin: 0;
+  font-size: 18px;
+}
+#header .navbar{
+ /* remove padding*/
+  padding-top: 0;
+  padding-bottom: 0;
+}
+li {
+  display: inline;
+  margin-right: 20px;
+}
+li a{
+  color:white;
+}
+li a:hover {
+  color: black;
+}
+.content{
+  text-align: center;
+  padding: 18%;
+}
+#header h1{
+  font-size: 120px;
+  letter-spacing: 1px;
+}
+#header h4{
+  font-size: 19px;
 }
 /* NEW RESTAURANTS*/
-  #new {
-      text-align: left;
-      border: 1px black;
-      padding:6px;
-      margin: 20px;
-  }
-  * {
-    box-sizing: border-box;
-  }
-  /* Float four columns side by side */
-  .column {
-    float: left;
-    width: 25%;
-    padding: 0 4px;
-  }
-  
-  /* Remove extra left and right margins, due to padding in columns */
-  .row {margin: 0 -5px;}
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Style the counter cards */
-  .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
-    padding: 16px;
-    text-align: center;
-    background-color: #f1f1f1;
-  }
+#new {
+  text-align: left;
+  border: 1px black;
+  padding:6px;
+  margin: 20px;
+}
+* {
+box-sizing: border-box;
+}
+/* Float four columns side by side */
+.column {
+float: left;
+width: 25%;
+padding: 0 4px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+/* Style the counter cards */
+.card {
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+padding: 16px;
+text-align: center;
+background-color: #f1f1f1;
+}
 /* NEW RESTAURANTS */
 
 /* CUISINES*/
-#header {
+#cuisine {
   text-align: center;
 }
 #menu{
@@ -94,21 +101,17 @@
 }
 .carousel-multi-item .carousel-indicators li{
  /*style carousel indicators*/
-  background-color: grey;
+  background-color: white;
   height: 1rem;
   width: 1rem;
 }
 .carousel-multi-item .carousel-indicators .active{
  /* style active carousel indicator*/
-  background-color: grey;
+  background-color: white;
   height: 1.25rem;
   width: 1.25rem;
 }
 /* CUISINES */
-
-/* CONTACT US */
-
-  /*CONTACT US*/
 
   /* SOCIALS*/
 #socials {
