@@ -2,8 +2,6 @@
   padding: 0;
 }
 #header{
-  background-image: url("../images/image1.jpg");
- /* Image is centered vertically and horizontally at all times */
   background-position: center center;
  /* Image doesn't repeat */
   background-repeat: no-repeat;
@@ -13,43 +11,6 @@
   background-size: cover;
   text-align: center;
   color: white;
-}
-#header p{
-  font-family: 'Zhi Mang Xing', cursive;
-  margin: 0;
-  font-size: 30px;
-  color:white;
-}
-.nav-items {
-  float: right;
-  margin: 0;
-  font-size: 18px;
-}
-#header .navbar{
- /* remove padding*/
-  padding-top: 0;
-  padding-bottom: 0;
-}
-li {
-  display: inline;
-  margin-right: 20px;
-}
-li a{
-  color:white;
-}
-li a:hover {
-  color: black;
-}
-.content{
-  text-align: center;
-  padding: 18%;
-}
-#header h1{
-  font-size: 120px;
-  letter-spacing: 1px;
-}
-#header h4{
-  font-size: 19px;
 }
 /* NEW RESTAURANTS*/
 #new {
@@ -119,3 +80,6 @@ background-color: #f1f1f1;
 }
   /*SOCIALS*/
 
+/* CONTACT */
+
+/* CONTACT */
